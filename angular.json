@@ -62,16 +62,23 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "mutualfund:build:development",
+            "open": false
+          },
           "configurations": {
             "production": {
-              "browserTarget": "mutualfund:build:production"
+              "browserTarget": "mutualfund:build:production",
+              "open": false
             },
             "development": {
-              "browserTarget": "mutualfund:build:development"
+              "browserTarget": "mutualfund:build:development",
+              "open": false
             }
-          },
-          "defaultConfiguration": "development"
-        },
+  },
+  "defaultConfiguration": "development"
+},
+
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
